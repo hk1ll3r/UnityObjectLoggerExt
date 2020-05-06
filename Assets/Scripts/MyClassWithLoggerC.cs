@@ -8,6 +8,5 @@ public class MyClassWithLoggerC: MonoBehaviourWithLogger
 {
     public void OnButtonClick() {
         LogLog("Hello World!");
-        Debug.Log("TRee");
     }
 }
