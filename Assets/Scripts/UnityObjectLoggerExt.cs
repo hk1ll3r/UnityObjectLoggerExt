@@ -60,15 +60,15 @@ namespace NoSuchStudio.Common {
                 format),
                 args);
         }
-        public static void LogLog(this MonoBehaviour mono, string format, params object[] args) {
-            Log(mono, LogType.Log, format, args);
+        public static void LogLog(this UnityEngine.Object unityObj, string format, params object[] args) {
+            Log(unityObj, LogType.Log, format, args);
         }
-        public static void LogWarn(this MonoBehaviour mono, string format, params object[] args) {
-            Log(mono, LogType.Warning, format, args);
+        public static void LogWarn(this UnityEngine.Object unityObj, string format, params object[] args) {
+            Log(unityObj, LogType.Warning, format, args);
         }
 
-        public static void LogError(this MonoBehaviour mono, string format, params object[] args) {
-            Log(mono, LogType.Error, format, args);
+        public static void LogError(this UnityEngine.Object unityObj, string format, params object[] args) {
+            Log(unityObj, LogType.Error, format, args);
         }
       
         private static void AddType(Type type) {
